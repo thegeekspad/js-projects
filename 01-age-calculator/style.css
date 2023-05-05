@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.logo i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.info-icon i {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Content styles */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  
+  .logo, .title, .info-icon {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .title {
+    order: 2;
+    
+  }
+  
+  .logo {
+    order: 1;
+    display: none;
+  }
+  
+  .info-icon {
+    order: 3;
+    display: none;
+  }
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 03.s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 20px;
+}
